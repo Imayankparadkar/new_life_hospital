@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+body {
+  /* Deeper, richer background.
+     Primary text is a very dark blue-gray for strong contrast and elegance.
+  */
+  @apply bg-[#e0e8e8] text-[#203840] font-sans antialiased;
+}
+
+.container {
+  @apply px-4 mx-auto max-w-7xl;
+}
+
+/* --- Buttons --- */
+.btn {
+  @apply inline-block px-8 py-3 font-medium rounded-lg tracking-wide transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-[#e0e8e8];
+}
+
+.btn-primary {
+  /* Stronger primary button with a deeper gradient and more pronounced hover. */
+  @apply bg-gradient-to-r from-[#305060] to-[#406878] text-white shadow-md hover:from-[#203840] hover:to-[#305060] hover:shadow-lg hover:-translate-y-0.5 focus:ring-[#305060];
+}
+
+.btn-secondary {
+  /* A lighter, yet still deep, secondary button with its own gradient. */
+  @apply bg-gradient-to-r from-[#607880] to-[#789098] text-white shadow-md hover:from-[#506870] hover:to-[#607880] hover:shadow-lg hover:-translate-y-0.5 focus:ring-[#607880];
+}
+
+.btn-outline {
+  /* Outline button now matches the primary color, with a full-fill hover effect. */
+  @apply bg-transparent border-2 border-[#305060] text-[#305060] hover:bg-[#305060] hover:text-white focus:ring-[#305060];
+}
+
+/* --- Typography & Section Styling --- */
+
+.section-title {
+  /* Text color is now the darkest shade for impact. */
+  @apply text-3xl md:text-5xl font-sans font-bold text-[#203840] mb-8 text-center relative pb-4;
+}
+
+.section-title::after {
+  /* A more vibrant gradient for the underline. */
+  content: '';
+  @apply absolute bottom-0 left-1/2 -translate-x-1/2 w-24 h-1 rounded-full bg-gradient-to-r from-[#a8c8d8] to-[#406878];
+}
+
+.section-subtitle {
+  /* Subtitle text is a darker gray for better readability against the new background. */
+  @apply max-w-3xl mx-auto text-center text-lg text-[#406878] mb-12;
+}
+
+/* --- New Modern Components --- */
+
+.card {
+  /* Cards maintain a clean white background but with a more subtle border and shadow. */
+  @apply bg-white p-6 rounded-xl shadow-lg border border-gray-200 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2;
+}
+
+.chip {
+  /* Chips have a softer background with darker text. */
+  @apply inline-block bg-[#a8c8d8]/30 text-[#305060] text-sm font-semibold px-4 py-1 rounded-full;
+}
+
+.form-input {
+  /* Form inputs now have a more defined border and focus ring. */
+  @apply w-full px-4 py-3 rounded-lg border border-[#a8c8d8] bg-white transition-all duration-300 focus:border-[#406878] focus:ring-2 focus:ring-[#406878]/50;
+}

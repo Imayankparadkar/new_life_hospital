@@ -140,7 +140,7 @@ const Home = () => {
       <TestimonialSlider />
 
       {/* CTA Section */}
-      <section className="py-20 bg-[#305060] text-white text-center">
+      <section className="py-20 bg-[#203840] text-white text-center">
         <div className="container">
           <h2 className="text-4xl font-bold mb-4">Ready to Start Your Healing Journey?</h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto opacity-90">
